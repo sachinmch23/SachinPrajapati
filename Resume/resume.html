@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume | NeoDev</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@300;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .resume-page {
+            width: 100%;
+            height: 100%;
+            background: #fff;
+            padding: 2rem;
+            color: #333;
+            font-family: 'Helvetica Neue', sans-serif;
+            text-align: left;
+            cursor: default;
+            /* Reset cursor inside resume */
+        }
+
+        .resume-page h1 {
+            color: #333;
+            font-size: 2.5rem;
+            text-align: left;
+            margin: 0;
+        }
+
+        .resume-page h2 {
+            color: #444;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+            margin-top: 1.5rem;
+        }
+
+        .resume-page p,
+        .resume-page li {
+            font-size: 1rem;
+            color: #555;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="bg-canvas"></canvas>
+
+    <nav>
+        <div class="logo">SAC<span style="color:var(--secondary)">HIN</span></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="image.html">Image</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="achievements.html">Achieve</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="resume.html" class="active">Resume</a></li>
+        </ul>
+        <div class="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </nav>
+
+    <main class="page-content">
+        <h1>Static <span class="glow">Log</span></h1>
+
+        <div class="resume-preview">
+            <div class="resume-page">
+                <div style="display:flex; justify-content:space-between; align-items:center;">
+                    <div>
+                        <h1>Alex Developer</h1>
+                        <p>Full Stack Engineer | Cyberpunk Enthusiast</p>
+                    </div>
+                    <div style="text-align:right;">
+                        <p>alex@neodev.com</p>
+                        <p>+1 234 567 890</p>
+                    </div>
+                </div>
+
+                <h2>Summary</h2>
+                <p>Innovative developer with 5+ years of experience in building high-performance web applications using
+                    modern technologies.</p>
+
+                <h2>Experience</h2>
+                <h3>Senior Front-End Dev | CyberTech Solutions</h3>
+                <p><i>2023 - Present</i></p>
+                <ul>
+                    <li>Led UI/UX redesign of flagship product.</li>
+                    <li>Managed team of 4 junior developers.</li>
+                </ul>
+
+                <h3>Web Developer | PixelCorp</h3>
+                <p><i>2021 - 2023</i></p>
+                <ul>
+                    <li>Developed e-commerce platforms using React.</li>
+                </ul>
+
+                <h2>Education</h2>
+                <p><strong>B.S. Computer Science</strong> - Tech University (2020)</p>
+
+                <h2>Skills</h2>
+                <p>JavaScript, React, Node.js, Python, Three.js, CSS3</p>
+            </div>
+        </div>
+
+        <a href="#" class="btn" onclick="alert('Downloading PDF...'); return false;">Download PDF</a>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

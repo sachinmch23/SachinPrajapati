@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education | NeoDev</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@300;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .edu-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            width: 100%;
+            max-width: 1000px;
+        }
+
+        .edu-card {
+            border-left: 3px solid var(--primary);
+        }
+
+        .edu-year {
+            font-size: 2.5rem;
+            opacity: 0.1;
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="bg-canvas"></canvas>
+
+    <nav>
+        <div class="logo">SAC<span style="color:var(--secondary)">HIN</span></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="image.html">Image</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="education.html" class="active">Education</a></li>
+            <li><a href="achievements.html">Achieve</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="resume.html">Resume</a></li>
+        </ul>
+        <div class="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </nav>
+
+    <main class="page-content">
+        <h1>Academic <span class="glow">Data</span></h1>
+
+        <div class="edu-container">
+            <!-- Edu 1 -->
+            <div class="glass-card edu-card">
+                <div class="edu-year">2020</div>
+                <h3 style="color: var(--primary);">B.S. Computer Science</h3>
+                <h4 style="margin-bottom: 1rem;">Tech University</h4>
+                <p>Graduated with Honors. Specialized in Artificial Intelligence and Web Technologies.</p>
+            </div>
+
+            <!-- Edu 2 -->
+            <div class="glass-card edu-card" style="border-left-color: var(--secondary);">
+                <div class="edu-year">2018</div>
+                <h3 style="color: var(--secondary);">Full Stack Bootcamp</h3>
+                <h4 style="margin-bottom: 1rem;">Code Academy</h4>
+                <p>Intensive 6-month program covering MERN stack, Git workflow, and Agile methodologies.</p>
+            </div>
+
+            <!-- Edu 3 -->
+            <div class="glass-card edu-card" style="border-left-color: var(--accent);">
+                <div class="edu-year">2016</div>
+                <h3 style="color: var(--accent);">High School Diploma</h3>
+                <h4 style="margin-bottom: 1rem;">City High</h4>
+                <p>Focus on Mathematics and Computer Science.</p>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

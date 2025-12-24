@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience | NeoDev</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@300;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <canvas id="bg-canvas"></canvas>
+
+    <nav>
+        <div class="logo">SAC<span style="color:var(--secondary)">HIN</span></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="image.html">Image</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="experience.html" class="active">Experience</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="achievements.html">Achieve</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="resume.html">Resume</a></li>
+        </ul>
+        <div class="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </nav>
+
+    <main class="page-content">
+        <h1>Career <span class="glow">Path</span></h1>
+
+        <div class="timeline" style="margin-top: 2rem;">
+            <!-- Experience 1 -->
+            <div class="timeline-item">
+                <div class="glass-card" style="padding: 1.5rem;">
+                    <h3 style="color:var(--primary)">Senior Front-End Dev</h3>
+                    <h4 style="color: #ccc;">CyberTech Solutions</h4>
+                    <span style="display:block; margin-bottom: 10px; font-size: 0.9rem; color: var(--accent);">2023 -
+                        Present</span>
+                    <p style="font-size: 0.95rem;">
+                        Leading the UI/UX team for next-gen web applications. Implemented micro-frontend architecture
+                        and improved load times by 40%.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Experience 2 -->
+            <div class="timeline-item" style="animation-delay: 0.4s;">
+                <div class="glass-card" style="padding: 1.5rem;">
+                    <h3 style="color:var(--primary)">Web Developer</h3>
+                    <h4 style="color: #ccc;">PixelCorp</h4>
+                    <span style="display:block; margin-bottom: 10px; font-size: 0.9rem; color: var(--accent);">2021 -
+                        2023</span>
+                    <p style="font-size: 0.95rem;">
+                        Developed responsive e-commerce sites. Collaborated with designers to bring Figma prototypes to
+                        life.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Experience 3 -->
+            <div class="timeline-item" style="animation-delay: 0.6s;">
+                <div class="glass-card" style="padding: 1.5rem;">
+                    <h3 style="color:var(--primary)">Junior Developer</h3>
+                    <h4 style="color: #ccc;">StartUp Inc</h4>
+                    <span style="display:block; margin-bottom: 10px; font-size: 0.9rem; color: var(--accent);">2020 -
+                        2021</span>
+                    <p style="font-size: 0.95rem;">
+                        Assisted in backend API development and bug fixing. Gained expertise in RESTful services and
+                        database management.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+    <script>
+        // Scroll Animation Trigger (Simple Intersection Observer)
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = 1;
+                    entry.target.style.transform = 'translateX(0)';
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.timeline-item').forEach(item => {
+            // Reset for observer to handle if needed, but CSS animation handles load.
+            // Let's rely on CSS load animation for now as per plan "Page transition".
+            // If scroll long, we need observer.
+            // item.style.opacity = 0; 
+            // observer.observe(item);
+        });
+    </script>
+</body>
+
+</html>
